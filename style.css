@@ -1,0 +1,366 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--navy:#1d3557;
+--blue:#7fa5c7;
+--gold:#c8a04b;
+--cream:#fdfaf4;
+--paper:#fffdf9;
+--pink:#ead6d9;
+--light-blue:#dce8f1;
+
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:
+linear-gradient(
+180deg,
+#fdfaf4 0%,
+#fffdf9 40%,
+#f8f8f5 100%
+);
+
+color:var(--navy);
+
+overflow-x:hidden;
+}
+
+.background-watercolor{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+background:
+radial-gradient(
+circle at top left,
+rgba(173,216,230,.18),
+transparent 40%
+),
+
+radial-gradient(
+circle at bottom right,
+rgba(200,160,75,.08),
+transparent 35%
+);
+
+z-index:-1;
+}
+
+.container{
+
+max-width:760px;
+
+margin:auto;
+
+padding:30px 20px 70px;
+
+position:relative;
+}
+
+header{
+
+position:relative;
+
+text-align:center;
+
+margin-bottom:35px;
+}
+
+
+h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:52px;
+
+font-weight:600;
+
+letter-spacing:5px;
+
+color:var(--navy);
+}
+
+h1 span{
+
+display:block;
+
+font-size:28px;
+
+letter-spacing:8px;
+
+margin-top:8px;
+}
+
+.event-logo-center{
+
+text-align: center;
+
+margin-top: 10px;
+
+margin-bottom: 25px;
+
+opacity:.95;
+}
+
+.event-logo-center img{
+
+width: 70px;
+height: auto;
+}
+
+.photo-section{
+
+position:relative;
+
+margin-bottom:40px;
+}
+
+.gold-frame{
+
+position:absolute;
+
+inset:-10px;
+
+border:3px solid rgba(200,160,75,.75);
+
+border-radius:45% 55% 50% 50%;
+
+z-index:1;
+}
+
+.family-photo{
+
+width:100%;
+
+display:block;
+
+border-radius:45% 55% 50% 50%;
+
+position:relative;
+
+z-index:2;
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.12);
+}
+
+.message{
+
+text-align:center;
+}
+
+.message h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:56px;
+
+font-weight:500;
+
+line-height:1.15;
+
+margin-bottom:8px;
+}
+
+.message h3{
+
+font-family:'Great Vibes',cursive;
+
+font-size:78px;
+
+font-weight:400;
+
+color:var(--gold);
+
+margin-bottom:20px;
+}
+
+.ornament{
+
+width:120px;
+height:2px;
+
+background:var(--gold);
+
+margin:0 auto 30px;
+}
+
+.message p{
+
+max-width:520px;
+
+margin:auto;
+
+font-size:19px;
+
+line-height:1.8;
+
+color:#5b6d88;
+}
+
+.signature-block{
+
+margin-top:35px;
+}
+
+.with-love{
+
+font-size:18px !important;
+
+margin-bottom:8px !important;
+}
+
+.signature{
+
+font-family:'Great Vibes',cursive !important;
+
+font-size:62px !important;
+
+color:#6e98b8 !important;
+}
+
+.buttons{
+margin-bottom:90px ;
+
+margin-top:70px;
+
+display:grid;
+
+gap:18px;
+}
+
+.card{
+
+background:white;
+
+border-radius:24px;
+
+padding:20px;
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+text-decoration:none;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.05);
+
+transition:.25s;
+
+color:inherit;
+}
+
+.card:hover{
+
+transform:translateY(-4px);
+}
+
+.icon{
+
+width:58px;
+height:58px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+font-size:28px;
+}
+
+.icon i{
+font-size: 28px;
+color: #b9974e;
+}
+
+
+.gold{
+background:#f6f0df;
+}
+
+
+.card h4{
+
+font-size:22px;
+
+margin-bottom:4px;
+}
+
+.card span{
+
+color:#8b8f98;
+}
+
+footer{
+text-align:center;
+}
+
+.footer-message{
+font-family:'Great Vibes', cursive;
+font-size:32px;
+color:#6f8db2;
+margin-bottom:8px;
+}
+
+.footer-event{
+font-size:14px;
+letter-spacing:4px;
+color:#b9974e;
+text-transform:uppercase;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:42px;
+}
+
+.message h2{
+font-size:38px;
+}
+
+.message h3{
+font-size:56px;
+}
+
+.signature{
+font-size:50px !important;
+}
+
+.event-logo{
+width:55px;
+}
+
+.card h4{
+font-size:18px;
+}
+
+.card span{
+font-size:14px;
+}
+
+}
